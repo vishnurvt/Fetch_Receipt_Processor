@@ -179,7 +179,7 @@ sudo ln -s /opt/Postman/Postman /usr/bin/postman
 ## API Testing
 To get the points by using the code and the API, follow the steps below:
 
-1. Run [fetch_receipt_processor.py](fetch_receipt_processor.py) on Python and make sure the Flask application is running on your local machine. You can run the Flask application by executing the Python script containing the code provided.
+1. Run [fetch_receipt_processor.py](src/fetch_receipt_processor.py) on Python and make sure the Flask application is running on your local machine. You can run the Flask application by executing the Python script containing the code provided.
 2. Once the Flask application is running, you can use an HTTP client tool like Postman to send a POST request to the `/receipts/process` endpoint with the provided input JSON.
 3. Get the unique ID json of your receipt If you are using Postman:
 
