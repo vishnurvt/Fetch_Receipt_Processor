@@ -131,3 +131,45 @@ Breakdown:
 ```
 
 ---
+
+## Installation Guide
+This guide below will walk you through the installation process of the latest versions of Python, Flask, and Postman on various operating systems. Note that Postman is for API testing only and all soets of other alternative softwares can be used to test the given API and related code too. 
+## Python
+
+Windows or macOS:
+  
+1. Visit the official Python website: python.org.
+2. Navigate to the Downloads section and click on the latest Python release for Windows or macOS.
+3. Scroll down to the Files section and select the appropriate Windows or macOS installer based on your system architecture (32-bit or 64-bit).
+4. Run the installer and follow the prompts.
+5. Ensure that the "Add Python to PATH" option is checked during the Windows installation.
+6. Once the installation is complete, open the command prompt or the terminal and type python --version to verify the installation.
+
+Linux: 
+
+1. Open a terminal window and type the following command to update the package lists: `sudo apt update`
+2. Install Python by running the command: `sudo apt install python3`
+3. After the installation is complete, type `python3 --version` to verify the installation.
+
+## Flask Installation
+1. Open a terminal or command prompt.
+2. Type the following command to install Flask: `pip install flask`
+
+## Postman Installation
+
+Windows or macOS:
+
+1. Open a web browser and go to the official Postman website: postman.com.
+2. Download the correct version based on your OS and system archetecture.
+3. Run the installer and follow the on-screen instructions.
+
+Linux:
+
+1. Open a terminal window.
+2. Type the following commands to download and install Postman:
+```bash
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -xzf postman.tar.gz -C /opt
+rm postman.tar.gz
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
+```
