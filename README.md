@@ -1,4 +1,4 @@
-# Fetch Reciept Processor
+# Fetch Receipt Processor
 This repository contains a web service that fulfills the documented API for processing receipts and calculating points. The API specification is described below. Please refer to the provided [api.yml](./api.yml) file for a formal definition of the API.
 ## Summary of API Specification
 
