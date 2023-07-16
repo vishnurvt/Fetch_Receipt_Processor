@@ -22,7 +22,7 @@ Example Response:
 { "id": "7fb1377b-b223-49d9-a31a-5a02701dd310" }
 ```
 
-## Endpoint: Get Points
+### Endpoint: Get Points
 
 * Path: `/receipts/{id}/points`
 * Method: `GET`
@@ -38,7 +38,7 @@ Example Response:
 
 ---
 
-# Rules
+## Rules
 
 These rules collectively define how many points should be awarded to a receipt.
 
@@ -51,7 +51,7 @@ These rules collectively define how many points should be awarded to a receipt.
 * 10 points if the time of purchase is after 2:00pm and before 4:00pm.
 
 
-## Examples
+### Examples
 
 ```json
 {
@@ -93,7 +93,6 @@ Breakdown:
   = 28 points
 ```
 
-----
 
 ```json
 {
