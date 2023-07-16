@@ -151,11 +151,11 @@ Linux:
 2. Install Python by running the command: `sudo apt install python3`
 3. After the installation is complete, type `python3 --version` to verify the installation.
 
-## Flask Installation
+## Flask 
 1. Open a terminal or command prompt.
 2. Type the following command to install Flask: `pip install flask`
 
-## Postman Installation
+## Postman 
 
 Windows or macOS:
 
