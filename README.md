@@ -173,3 +173,31 @@ sudo tar -xzf postman.tar.gz -C /opt
 rm postman.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 ```
+
+---
+
+## API Testing
+To get the points by using the code and the API, follow the steps below:
+
+1. Run [fetch_receipt_processor.py](fetch_receipt_processor.py) on Python and make sure the Flask application is running on your local machine. You can run the Flask application by executing the Python script containing the code provided.
+2. Once the Flask application is running, you can use an HTTP client tool like Postman to send a POST request to the `/receipts/process` endpoint with the provided input JSON.
+3. Get the unique ID json of your receipt If you are using Postman:
+
+   Open Postman and create a new request.
+
+   Set the request URL to `http://localhost:5000/receipts/process`.
+
+   Set the request method to POST. In the Headers section, add a header with the key as `Content-Type` and value as `application/json`.
+   
+   In the Body section, select the "Raw" option and set the content type to "JSON (application/json)".
+
+   Copy the provided input JSON (refer examples folder) and paste it into the request body. Click SEND to send the request. This POST request should receive a response containing the number of points awarded in a JSON format. The response will include the ID assigned to the receipt.
+
+4. Get the points awarded for the receipt if you are using Postman:
+
+   Set the request URL to http://localhost:5000/receipts/{id}/points, replacing {id} with the actual receipt ID received in the previous response.
+
+   Set the request method to GET.
+
+   Click the SEND button to send the request. The response to this GET request will contain the number of points awarded for the receipt.
+   
