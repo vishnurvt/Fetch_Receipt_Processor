@@ -12,9 +12,8 @@ def calculate_points(receipt):
     points = 0
 
     # Rule 1: 1 point for every alphanumeric character in the retailer name
-    for char in receipt["retailer"]:
-        points += sum(char.isalnum())
-
+    points += sum(1 for char in receipt["retailer"] if char.isalnum())
+    
     # Rule 2: 50 points if the total is a round dollar amount with no cents
     if receipt["total"].endswith(".00"):
         points += 50
